@@ -5,11 +5,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { TypedUseSelectorHook, useDispatch as useDispatchJS, useSelector as useSelectorJS } from 'react-redux'
 
 
-const store = createStore(
-  reducer,
-  {},
-  composeWithDevTools(applyMiddleware(thunk))
-);
+const store = createStore(reducer, applyMiddleware(thunk));
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>

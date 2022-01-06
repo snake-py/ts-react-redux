@@ -1,9 +1,11 @@
 import { Action } from '../actions';
 import { ActionTypes } from '../action-types';
 
-interface IBankState {
-  balance: number;
-}
+
+// defined in global scope see ./src/Reducer.d.ts
+// interface IBankState {
+//   balance: number;
+// }
 
 const initialState: IBankState = {
   balance: 0,

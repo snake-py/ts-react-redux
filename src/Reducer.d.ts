@@ -1,0 +1,4 @@
+
+interface IBankState {
+    balance: number;
+  }
