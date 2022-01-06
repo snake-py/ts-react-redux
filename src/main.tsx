@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* @ts-ignore */}
     <Provider store={store}>
       <App />
     </Provider>

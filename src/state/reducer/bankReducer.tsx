@@ -9,7 +9,7 @@ const initialState: IBankState = {
   balance: 0,
 };
 
-const reducer = (state = initialState, action: Action) => {
+const bankReducer = (state = initialState, action: Action) => {
   switch (action.type) {
     case ActionTypes.DEPOSIT:
       return {
@@ -31,4 +31,4 @@ const reducer = (state = initialState, action: Action) => {
   }
 };
 
-export default reducer;
+export default bankReducer;
